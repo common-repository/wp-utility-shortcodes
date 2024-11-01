@@ -1,0 +1,304 @@
+/**********************
+* general styles *
+***********************/
+.wpus	{
+	display: block;
+	font-size: 16px;
+	color: #f0f0f0;
+}
+
+.wpus em	{
+	height: 20px;
+	width: 20px;
+	display: inline-block;
+	float: left;
+	margin: 3px 5px 0 10px;
+}
+em.wpus_	{
+	margin: 0!important;
+	padding: 0;
+	height: 0!important;
+	width: 0!important;
+}
+.wpus_button em.wpus_	{
+	padding: 10px 7px;
+}
+.wpus_left	{
+	float: left;
+	margin-right: 10px!important;
+}
+.wpus_right	{
+	float: right;
+	margin-left: 10px!important;
+}
+.wpus_box:after	{
+	display: block;
+	visibility: hidden;
+	content: ".";
+	clear: both;
+	height: 0;
+}
+.wpus_box .wpus_button em	{
+	margin-left: 10px!important;
+}
+.wpus_box .wpus_button em.wpus_	{
+	padding: 5px!important;
+}
+.wpus_box, .wpus_button	{
+	margin: 5px 0 5px 0;
+}
+.wpus_button a	{
+	color: #fff;
+	text-decoration: none;
+}
+/**********************
+* element types *
+***********************/
+.wpus_alert	{
+	background: url('images/alert.png') no-repeat;
+}
+.wpus_info	{
+	background: url('images/info.png') no-repeat;
+}
+.wpus_tick	{
+	background: url('images/tick.png') no-repeat;
+}
+.wpus_note	{
+	background: url('images/note.png') no-repeat;
+}
+.wpus_download	{
+	background: url('images/download.png') no-repeat;
+}
+.wpus_quote	{
+	background: url('images/quote.png') no-repeat;
+}
+/**********************
+* button sizes *
+***********************/
+.wpus_button_large, .wpus_button_normal, .wpus_button_small	{
+	text-shadow: 1px 1px 1px #666;
+}
+.wpus_button:hover, .wpus_button__:hover	{
+	filter: alpha(opacity=75); /* internet explorer */
+	-khtml-opacity: 0.75;      /* khtml, old safari */
+	-moz-opacity: 0.75;       /* mozilla, netscape */
+	opacity: 0.75;           /* fx, safari, opera */
+	cursor: pointer;
+}
+.wpus_button_large	{
+	width: 182px!important;
+	height: 27px;
+	line-height: 27px;
+}
+.wpus_button_large em	{
+	margin: 3px 7px 3px 10px;
+}
+.wpus_button_normal	{
+	width: 139px!important;
+	height: 27px;
+	line-height: 27px;
+}
+.wpus_button_normal em, .wpus_button__ em	{
+	margin: 3px 7px 3px 10px;
+}
+.wpus_button_small	{
+	width: 98px!important;
+	height: 27px;
+	line-height: 27px;
+}
+.wpus_button_small em	{
+	margin: 3px 7px 4px 10px;
+	
+}
+/**********************
+* button colors *
+***********************/
+.wpus_button	{ /*default if no size or color specified*/
+	width: 139px;
+	height: 27px;
+	line-height: 27px;
+	background: url('images/normal_gray.png');
+}
+.wpus_button_large.wpus_button_blue	{
+	background: url('images/large_blue.png')!important;
+}
+.wpus_button_blue	{
+	background: url('images/normal_blue.png')!important;
+}
+.wpus_button_small.wpus_button_blue	{
+	background: url('images/small_blue.png')!important;
+}
+.wpus_button_large.wpus_button_yellow	{
+	background: url('images/large_yellow.png')!important;
+	color: #444;
+	text-shadow: 1px 1px 1px #ccc;	
+}
+.wpus_button_yellow a	{
+	color: #444;
+}
+.wpus_button_yellow	{
+	background: url('images/normal_yellow.png')!important;
+	color: #444;
+	text-shadow: 1px 1px 1px #ccc;	
+}
+.wpus_button_small.wpus_button_yellow	{
+	background: url('images/small_yellow.png')!important;
+	color: #444;
+	text-shadow: 1px 1px 1px #ccc;	
+}
+.wpus_button_large.wpus_button_red	{
+	background: url('images/large_red.png')!important;
+}
+.wpus_button_red	{
+	background: url('images/normal_red.png')!important;
+}
+.wpus_button_small.wpus_button_red	{
+	background: url('images/small_red.png')!important;
+}
+.wpus_button_large.wpus_button_green	{
+	background: url('images/large_green.png')!important;
+}
+.wpus_button_green	{
+	background: url('images/normal_green.png')!important;
+}
+.wpus_button_small.wpus_button_green	{
+	background: url('images/small_green.png')!important;
+}
+.wpus_button_large.wpus_button_orange	{
+	background: url('images/large_orange.png')!important;
+	color: #444;
+	text-shadow: 1px 1px 1px #ccc;		
+}
+.wpus_button_orange	{
+	background: url('images/normal_orange.png')!important;
+	color: #444;
+	text-shadow: 1px 1px 1px #ccc;	
+}
+.wpus_button_small.wpus_button_orange	{
+	background: url('images/small_orange.png')!important;
+	color: #444;
+	text-shadow: 1px 1px 1px #ccc;		
+}
+
+.wpus_button_large.wpus_button_gray	{
+	background: url('images/large_gray.png')!important;
+	color: #444;
+	text-shadow: 1px 1px 1px #ccc;	
+}
+
+.wpus_button_gray	{
+	background: url('images/normal_gray.png')!important;
+	color: #444;
+	text-shadow: 1px 1px 1px #ccc;		
+}
+
+.wpus_button_small.wpus_button_gray	{
+	background: url('images/small_gray.png')!important;
+	color: #444;
+	text-shadow: 1px 1px 1px #ccc;	
+}
+
+.wpus_button_large.wpus_button_white	{
+	background: url('images/large_white.png')!important;
+	color: #222;
+	text-shadow: 1px 1px 1px #f0f0f0;
+}
+
+.wpus_button_white	{
+	background: url('images/normal_white.png')!important;
+	color: #222;
+	text-shadow: 1px 1px 1px #f0f0f0;	
+}
+
+.wpus_button_small.wpus_button_white	{
+	background: url('images/small_white.png')!important;
+	color: #222;
+	text-shadow: 1px 1px 1px #f0f0f0;
+}
+
+.wpus_button_large.wpus_button_black	{
+	background: url('images/large_black.png')!important;
+	color: #f0f0f0;
+	text-shadow: 1px 1px 1px #222;
+}
+.wpus_button_black	{
+	background: url('images/normal_black.png')!important;
+	color: #f0f0f0;
+	text-shadow: 1px 1px 1px #222;
+}
+.wpus_button_small.wpus_button_black	{
+	background: url('images/small_black.png')!important;
+	color: #f0f0f0;
+	text-shadow: 1px 1px 1px #222;
+}
+
+/**********************
+* box sizes *
+***********************/
+.wpus_box_full, .wpus_box_large, .wpus_box_normal, .wpus_box_small, .wpus_box_	{
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-color: #a1a1a1;
+	padding: 8px 12px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.wpus_box_full em, .wpus_box_large em, .wpus_box_normal em, .wpus_box_small em	{
+	margin: 3px 5px 0 0;
+}
+.wpus_box_full em.wpus_, .wpus_box_large em.wpus_, .wpus_box_normal em.wpus_, .wpus_box_small em.wpus_	{
+	padding: 0!important;
+	margin: 0!important;
+	width: 0!important;
+	height: 0!important;
+}
+
+.wpus_box_large	{
+	width: 400px;
+}
+.wpus_box_normal	{
+	width: 300px;
+}
+.wpus_box_small	{
+	width: 200px;
+}
+/**********************
+* box colors *
+***********************/
+
+.wpus_box_blue	{
+	background: #a0c5ef!important;
+	color: #333!important;
+}
+.wpus_box_red	{
+	background: #eba7a7!important;
+}
+.wpus_box_yellow	{
+	background: #ffd149!important;
+	color: #666!important;
+}
+.wpus_box_green	{
+	background: #c3fad0!important;
+	color: #666!important;
+}
+.wpus_box_orange	{
+	background: #ffa440!important;
+	color: #f0f0f0!important;
+}
+.wpus_box_white	{
+	background: #e7e7e7!important;
+	color: #666!important;
+}
+.wpus_box_gray, .wpus_box_	{
+	background: #c1c1c1;
+	color: #333;
+}
+.wpus_box_black	{
+	background: #515151!important;
+	color: #f0f0f0!important;
+}
+/**********************
+* box sizes *
+***********************/
